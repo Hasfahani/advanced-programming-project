@@ -1,0 +1,42 @@
+{
+    "The Great Gatsby": {
+        "name": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "publication_date": "1925",
+        "category": "Book",
+        "status": "available",
+        "image": ""
+    },
+    "Inception": {
+        "name": "Inception",
+        "author": "Christopher Nolan",
+        "publication_date": "2010",
+        "category": "Film",
+        "status": "borrowed",
+        "image": ""
+    },
+    "1984": {
+        "name": "1984",
+        "author": "George Orwell",
+        "publication_date": "1949",
+        "category": "Book",
+        "status": "available",
+        "image": ""
+    },
+    "The Matrix": {
+        "name": "The Matrix",
+        "author": "The Wachowskis",
+        "publication_date": "1999",
+        "category": "Film",
+        "status": "borrowed",
+        "image": ""
+    },
+    "The Amazing Spider-Man ": {
+        "name": "The Amazing Spider-Man ",
+        "author": "Stan Lee",
+        "publication_date": "2012",
+        "category": "Film",
+        "image": "C:/Users/asfah/Pictures/Screenshots/Screenshot 2025-12-05 163146.png",
+        "status": "available"
+    }
+}
