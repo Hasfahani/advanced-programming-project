@@ -1,277 +1,277 @@
 {
-    "48laws": {
-        "name": "48 Laws of Power",
-        "author": "Robert Greene",
-        "publication_date": "1998",
-        "category": "Book",
-        "image": "picss/48laws.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
-    },
+  "48 Laws of Power": {
+    "name": "48 Laws of Power",
+    "author": "Robert Greene",
+    "publication_date": "1998",
+    "category": "Book",
+    "image": "picss/48laws.jpg",
+    "status": "available",
+    "borrowed_by": null,
+    "borrow_date": null,
+    "due_date": null
+  },
 
-    "art_of_seduction": {
-        "name": "The Art of Seduction",
-        "author": "Robert Greene",
-        "publication_date": "2001",
-        "category": "Book",
-        "image": "picss/art of seduction.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
-    },
+  "The Art of Seduction": {
+    "name": "The Art of Seduction",
+    "author": "Robert Greene",
+    "publication_date": "2001",
+    "category": "Book",
+    "image": "picss/art of seduction.jpg",
+    "status": "available",
+    "borrowed_by": null,
+    "borrow_date": null,
+    "due_date": null
+  },
 
-    "atomic_habits": {
-        "name": "Atomic Habits",
-        "author": "James Clear",
-        "publication_date": "2018",
-        "category": "Book",
-        "image": "picss/Atomic habits.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
-    },
+  "Atomic Habits": {
+    "name": "Atomic Habits",
+    "author": "James Clear",
+    "publication_date": "2018",
+    "category": "Book",
+    "image": "picss/Atomic habits.jpg",
+    "status": "available",
+    "borrowed_by": null,
+    "borrow_date": null,
+    "due_date": null
+  },
 
-    "better_call_saul": {
-        "name": "Better Call Saul",
-        "author": "Vince Gilligan",
-        "publication_date": "2015",
-        "category": "Series",
-        "image": "picss/better call saul.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
-    },
+  "Better Call Saul": {
+    "name": "Better Call Saul",
+    "author": "Vince Gilligan",
+    "publication_date": "2015",
+    "category": "Series",
+    "image": "picss/better call saul.jpg",
+    "status": "available",
+    "borrowed_by": null,
+    "borrow_date": null,
+    "due_date": null
+  },
 
-    "breaking_bad": {
-        "name": "Breaking Bad",
-        "author": "Vince Gilligan",
-        "publication_date": "2008",
-        "category": "Series",
-        "image": "picss/brba.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
-    },
+  "Breaking Bad": {
+    "name": "Breaking Bad",
+    "author": "Vince Gilligan",
+    "publication_date": "2008",
+    "category": "Series",
+    "image": "picss/brba.jpg",
+    "status": "available",
+    "borrowed_by": null,
+    "borrow_date": null,
+    "due_date": null
+  },
 
-    "cant_hurt_me": {
-        "name": "Can't Hurt Me",
-        "author": "David Goggins",
-        "publication_date": "2018",
-        "category": "Book",
-        "image": "picss/cant hurt me.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
-    },
+  "Can't Hurt Me": {
+    "name": "Can't Hurt Me",
+    "author": "David Goggins",
+    "publication_date": "2018",
+    "category": "Book",
+    "image": "picss/cant hurt me.jpg",
+    "status": "available",
+    "borrowed_by": null,
+    "borrow_date": null,
+    "due_date": null
+  },
 
-    "english_easy": {
-        "name": "English ist Einfach Easy",
-        "author": "Unknown",
-        "publication_date": "2020",
-        "category": "Book",
-        "image": "picss/english ist einfach easy.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
-    },
+  "English ist Einfach Easy": {
+    "name": "English ist Einfach Easy",
+    "author": "Unknown",
+    "publication_date": "2020",
+    "category": "Book",
+    "image": "picss/english ist einfach easy.jpg",
+    "status": "available",
+    "borrowed_by": null,
+    "borrow_date": null,
+    "due_date": null
+  },
 
-    "harry_potter": {
-        "name": "Harry Potter",
-        "author": "J.K. Rowling",
-        "publication_date": "1997",
-        "category": "Book",
-        "image": "picss/Harry potter.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
-    },
+  "Harry Potter": {
+    "name": "Harry Potter",
+    "author": "J.K. Rowling",
+    "publication_date": "1997",
+    "category": "Book",
+    "image": "picss/Harry potter.jpg",
+    "status": "available",
+    "borrowed_by": null,
+    "borrow_date": null,
+    "due_date": null
+  },
 
-    "inception": {
-        "name": "Inception",
-        "author": "Christopher Nolan",
-        "publication_date": "2010",
-        "category": "Film",
-        "image": "picss/inception.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
-    },
+  "Inception": {
+    "name": "Inception",
+    "author": "Christopher Nolan",
+    "publication_date": "2010",
+    "category": "Film",
+    "image": "picss/inception.jpg",
+    "status": "available",
+    "borrowed_by": null,
+    "borrow_date": null,
+    "due_date": null
+  },
 
-    "interstellar": {
-        "name": "Interstellar",
-        "author": "Christopher Nolan",
-        "publication_date": "2014",
-        "category": "Film",
-        "image": "picss/interstellar.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
-    },
+  "Interstellar": {
+    "name": "Interstellar",
+    "author": "Christopher Nolan",
+    "publication_date": "2014",
+    "category": "Film",
+    "image": "picss/interstellar.jpg",
+    "status": "available",
+    "borrowed_by": null,
+    "borrow_date": null,
+    "due_date": null
+  },
 
-    "mastery": {
-        "name": "Mastery",
-        "author": "Robert Greene",
-        "publication_date": "2012",
-        "category": "Book",
-        "image": "picss/mastery.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
-    },
+  "Mastery": {
+    "name": "Mastery",
+    "author": "Robert Greene",
+    "publication_date": "2012",
+    "category": "Book",
+    "image": "picss/mastery.jpg",
+    "status": "available",
+    "borrowed_by": null,
+    "borrow_date": null,
+    "due_date": null
+  },
 
-    "matrix": {
-        "name": "The Matrix",
-        "author": "The Wachowskis",
-        "publication_date": "1999",
-        "category": "Film",
-        "image": "picss/matrix.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
-    },
+  "The Matrix": {
+    "name": "The Matrix",
+    "author": "The Wachowskis",
+    "publication_date": "1999",
+    "category": "Film",
+    "image": "picss/matrix.jpg",
+    "status": "available",
+    "borrowed_by": null,
+    "borrow_date": null,
+    "due_date": null
+  },
 
-    "mission_impossible_fallout": {
-        "name": "Mission Impossible: Fallout",
-        "author": "Christopher McQuarrie",
-        "publication_date": "2018",
-        "category": "Film",
-        "image": "picss/mission impossible fallout.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
-    },
+  "Mission Impossible: Fallout": {
+    "name": "Mission Impossible: Fallout",
+    "author": "Christopher McQuarrie",
+    "publication_date": "2018",
+    "category": "Film",
+    "image": "picss/mission impossible fallout.jpg",
+    "status": "available",
+    "borrowed_by": null,
+    "borrow_date": null,
+    "due_date": null
+  },
 
-    "sherlock_holmes": {
-        "name": "Sherlock Holmes",
-        "author": "Arthur Conan Doyle",
-        "publication_date": "1892",
-        "category": "Book",
-        "image": "picss/sherlock holmes book.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
-    },
+  "Sherlock Holmes": {
+    "name": "Sherlock Holmes",
+    "author": "Arthur Conan Doyle",
+    "publication_date": "1892",
+    "category": "Book",
+    "image": "picss/sherlock holmes book.jpg",
+    "status": "available",
+    "borrowed_by": null,
+    "borrow_date": null,
+    "due_date": null
+  },
 
-    "startup": {
-        "name": "StartUp",
-        "author": "Ben Ketai",
-        "publication_date": "2016",
-        "category": "Series",
-        "image": "picss/Start up.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
-    },
+  "StartUp": {
+    "name": "StartUp",
+    "author": "Ben Ketai",
+    "publication_date": "2016",
+    "category": "Series",
+    "image": "picss/Start up.jpg",
+    "status": "available",
+    "borrowed_by": null,
+    "borrow_date": null,
+    "due_date": null
+  },
 
-    "tasm_2": {
-        "name": "The Amazing Spider-Man 2",
-        "author": "Marc Webb",
-        "publication_date": "2014",
-        "category": "Film",
-        "image": "picss/TASM 2.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
-    },
+  "The Amazing Spider-Man 2": {
+    "name": "The Amazing Spider-Man 2",
+    "author": "Marc Webb",
+    "publication_date": "2014",
+    "category": "Film",
+    "image": "picss/TASM 2.jpg",
+    "status": "available",
+    "borrowed_by": null,
+    "borrow_date": null,
+    "due_date": null
+  },
 
-    "tasm": {
-        "name": "The Amazing Spider-Man",
-        "author": "Marc Webb",
-        "publication_date": "2012",
-        "category": "Film",
-        "image": "picss/TASM.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
-    },
+  "The Amazing Spider-Man": {
+    "name": "The Amazing Spider-Man",
+    "author": "Marc Webb",
+    "publication_date": "2012",
+    "category": "Film",
+    "image": "picss/TASM.jpg",
+    "status": "available",
+    "borrowed_by": null,
+    "borrow_date": null,
+    "due_date": null
+  },
 
-    "data_structures": {
-        "name": "The Bible of Data Structures",
-        "author": "Unknown",
-        "publication_date": "2020",
-        "category": "Book",
-        "image": "picss/the bible of data structures.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
-    },
+  "The Bible of Data Structures": {
+    "name": "The Bible of Data Structures",
+    "author": "Unknown",
+    "publication_date": "2020",
+    "category": "Book",
+    "image": "picss/the bible of data structures.jpg",
+    "status": "available",
+    "borrowed_by": null,
+    "borrow_date": null,
+    "due_date": null
+  },
 
-    "finance_book": {
-        "name": "The Finance Book",
-        "author": "Stuart Warner",
-        "publication_date": "2017",
-        "category": "Book",
-        "image": "picss/the finance book.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
-    },
+  "The Finance Book": {
+    "name": "The Finance Book",
+    "author": "Stuart Warner",
+    "publication_date": "2017",
+    "category": "Book",
+    "image": "picss/the finance book.jpg",
+    "status": "available",
+    "borrowed_by": null,
+    "borrow_date": null,
+    "due_date": null
+  },
 
-    "go_programming": {
-        "name": "The Go Programming Language",
-        "author": "Alan Donovan & Brian Kernighan",
-        "publication_date": "2015",
-        "category": "Book",
-        "image": "picss/the go programming language.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
-    },
+  "The Go Programming Language": {
+    "name": "The Go Programming Language",
+    "author": "Alan Donovan & Brian Kernighan",
+    "publication_date": "2015",
+    "category": "Book",
+    "image": "picss/the go programming language.jpg",
+    "status": "available",
+    "borrowed_by": null,
+    "borrow_date": null,
+    "due_date": null
+  },
 
-    "intelligent_investor": {
-        "name": "The Intelligent Investor",
-        "author": "Benjamin Graham",
-        "publication_date": "1949",
-        "category": "Book",
-        "image": "picss/the intelligent investor.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
-    },
+  "The Intelligent Investor": {
+    "name": "The Intelligent Investor",
+    "author": "Benjamin Graham",
+    "publication_date": "1949",
+    "category": "Book",
+    "image": "picss/the intelligent investor.jpg",
+    "status": "available",
+    "borrowed_by": null,
+    "borrow_date": null,
+    "due_date": null
+  },
 
-    "maths_book": {
-        "name": "The Maths Book",
-        "author": "DK Publishing",
-        "publication_date": "2019",
-        "category": "Book",
-        "image": "picss/the maths book.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
-    },
+  "The Maths Book": {
+    "name": "The Maths Book",
+    "author": "DK Publishing",
+    "publication_date": "2019",
+    "category": "Book",
+    "image": "picss/the maths book.jpg",
+    "status": "available",
+    "borrowed_by": null,
+    "borrow_date": null,
+    "due_date": null
+  },
 
-    "war": {
-        "name": "War",
-        "author": "Unknown",
-        "publication_date": "2020",
-        "category": "Book",
-        "image": "picss/War.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
-    }
+  "War": {
+    "name": "War",
+    "author": "Unknown",
+    "publication_date": "2020",
+    "category": "Book",
+    "image": "picss/War.jpg",
+    "status": "available",
+    "borrowed_by": null,
+    "borrow_date": null,
+    "due_date": null
+  }
 }
