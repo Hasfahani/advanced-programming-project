@@ -12,6 +12,7 @@ from PyQt5.QtWidgets import (
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QPixmap, QFont
 
+
 BACKEND_URL = "http://127.0.0.1:5000"
 IMAGE_DIR = os.path.join(os.path.dirname(__file__), "..", "picss")
 
@@ -55,15 +56,20 @@ class MainWindow(QWidget):
         self.resize(1100, 650)
 
         self.current_data = {}
+        self.dark_mode = False
 
         main_layout = QHBoxLayout(self)
 
-        # LEFT SIDE
+        # ---------------- LEFT SIDE ----------------
         left_layout = QVBoxLayout()
 
         title = QLabel("📚 Media Library")
         title.setFont(QFont("Arial", 18, QFont.Bold))
         left_layout.addWidget(title)
+
+        self.btn_dark = QPushButton("🌙 Dark Mode")
+        self.btn_dark.clicked.connect(self.toggle_dark_mode)
+        left_layout.addWidget(self.btn_dark)
 
         controls = QHBoxLayout()
         self.category_box = QComboBox()
@@ -91,26 +97,26 @@ class MainWindow(QWidget):
         action_layout.addWidget(self.btn_return)
         left_layout.addLayout(action_layout)
 
-        # RIGHT SIDE
+        # ---------------- RIGHT SIDE ----------------
         right_layout = QVBoxLayout()
 
+        right_layout.addWidget(QLabel("Details", font=QFont("Arial", 12, QFont.Bold)))
         self.details = QLabel("Select an item to view details")
         self.details.setWordWrap(True)
         self.details.setAlignment(Qt.AlignTop)
         self.details.setFont(QFont("Arial", 11))
+        right_layout.addWidget(self.details)
 
+        right_layout.addWidget(QLabel("Cover", font=QFont("Arial", 12, QFont.Bold)))
         self.image = QLabel("No Image")
         self.image.setAlignment(Qt.AlignCenter)
         self.image.setFixedSize(300, 420)
         self.image.setStyleSheet("border: 1px solid #ccc; background:#f5f5f5;")
-
-        right_layout.addWidget(QLabel("Details", font=QFont("Arial", 12, QFont.Bold)))
-        right_layout.addWidget(self.details)
-        right_layout.addWidget(QLabel("Cover", font=QFont("Arial", 12, QFont.Bold)))
         right_layout.addWidget(self.image)
+
         right_layout.addStretch()
 
-        # SPLITTER
+        # ---------------- SPLITTER ----------------
         left_widget = QWidget()
         left_widget.setLayout(left_layout)
         right_widget = QWidget()
@@ -126,6 +132,8 @@ class MainWindow(QWidget):
 
         self.load_media()
 
+    # -----------------------------------------------------
+    # DATA LOADING
     # -----------------------------------------------------
     def load_media(self):
         try:
@@ -150,17 +158,15 @@ class MainWindow(QWidget):
                 else:
                     text += " 🔒 Borrowed"
 
-            lw = QListWidgetItem(text)
-            self.list_widget.addItem(lw)
+            self.list_widget.addItem(QListWidgetItem(text))
 
     def search_media(self):
         query = self.search_input.text().lower()
-        filtered = {
-            k: v for k, v in self.current_data.items()
-            if query in k.lower()
-        }
+        filtered = {k: v for k, v in self.current_data.items() if query in k.lower()}
         self.update_list(filtered)
 
+    # -----------------------------------------------------
+    # DETAILS
     # -----------------------------------------------------
     def show_details(self, item):
         name = item.text().replace(" 🔒 Borrowed", "").replace(" 🔴 OVERDUE", "")
@@ -208,6 +214,8 @@ class MainWindow(QWidget):
             self.image.setText("Image not found")
 
     # -----------------------------------------------------
+    # ACTIONS
+    # -----------------------------------------------------
     def borrow_media(self):
         item = self.list_widget.currentItem()
         if not item:
@@ -237,10 +245,46 @@ class MainWindow(QWidget):
         self.load_media()
 
     # -----------------------------------------------------
+    # DARK MODE
+    # -----------------------------------------------------
+    def toggle_dark_mode(self):
+        if not self.dark_mode:
+            self.apply_dark_mode()
+            self.btn_dark.setText("☀️ Light Mode")
+        else:
+            self.setStyleSheet("")
+            self.btn_dark.setText("🌙 Dark Mode")
+
+        self.dark_mode = not self.dark_mode
+
+    def apply_dark_mode(self):
+        self.setStyleSheet("""
+            QWidget {
+                background-color: #1e1e1e;
+                color: #f0f0f0;
+            }
+            QLineEdit, QListWidget, QComboBox {
+                background-color: #2b2b2b;
+                border: 1px solid #444;
+                color: #ffffff;
+            }
+            QPushButton {
+                background-color: #3c3c3c;
+                border: 1px solid #555;
+                padding: 6px;
+            }
+            QPushButton:hover {
+                background-color: #505050;
+            }
+        """)
+
+    # -----------------------------------------------------
     def is_overdue(self, media):
         if not media.get("due_date"):
             return False
-        return datetime.now().date() > datetime.strptime(media["due_date"], "%Y-%m-%d").date()
+        return datetime.now().date() > datetime.strptime(
+            media["due_date"], "%Y-%m-%d"
+        ).date()
 
 
 # ---------------------------------------------------------

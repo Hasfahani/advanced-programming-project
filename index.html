@@ -3,7 +3,7 @@
     Editorial by HTML5 UP
     Refactored for an Advanced Programming academic project
 -->
-<html>
+<html lang="en">
 <head>
     <title>Advanced Programming Project – Online Library Management System</title>
     <meta charset="utf-8" />
@@ -24,7 +24,10 @@
                 <a href="index.html" class="logo">
                     <strong>Advanced Programming</strong> Project
                 </a>
-                <button id="themeToggle">Dark Mode</button>
+
+                <button id="themeToggle" aria-label="Toggle dark mode">
+                    Dark Mode
+                </button>
             </header>
 
             <!-- HERO / BANNER -->
@@ -37,15 +40,16 @@
 
                     <p>
                         This website documents the design and implementation of an
-                        Online Library Management System developed as part of the
-                        Advanced Programming course. The project demonstrates
-                        backend development, desktop GUI design, and clean software
-                        architecture using Python.
+                        <strong>Online Library Management System</strong> developed as part of the
+                        Advanced Programming course. The project focuses on clean
+                        software architecture, RESTful backend design, and desktop
+                        graphical user interfaces using Python.
                     </p>
 
                     <ul>
                         <li><strong>Student:</strong> Habib Asfahani</li>
                         <li><strong>Student ID:</strong> 100004629</li>
+                        <li><strong>Course:</strong> Advanced Programming</li>
                         <li><strong>Professor:</strong> Esteban Pozo</li>
                         <li><strong>Academic Year:</strong> 2025</li>
                     </ul>
@@ -59,10 +63,17 @@
                 </header>
 
                 <p>
-                    The Online Library Management System is a desktop-based application
-                    that allows users to browse, search, borrow, and return media items
-                    such as books and films. The system tracks availability, borrower
-                    information, and due dates while providing clear visual feedback.
+                    The Online Library Management System is a desktop-based software
+                    application that allows users to browse, search, borrow, and return
+                    various media items such as books, films, and magazines. The system
+                    tracks availability, borrower information, and due dates while
+                    providing clear visual feedback through the user interface.
+                </p>
+
+                <p>
+                    The primary goal of the project is to demonstrate the application
+                    of advanced programming concepts, including modular design,
+                    client–server communication, and separation of concerns.
                 </p>
             </section>
 
@@ -76,9 +87,9 @@
                     <li><strong>Python</strong> – Core programming language</li>
                     <li><strong>Flask</strong> – RESTful backend API</li>
                     <li><strong>PyQt5</strong> – Desktop graphical user interface</li>
-                    <li><strong>JSON</strong> – Persistent data storage</li>
-                    <li><strong>Git & GitHub</strong> – Version control</li>
-                    <li><strong>GitHub Pages</strong> – Project documentation website</li>
+                    <li><strong>JSON</strong> – Lightweight persistent data storage</li>
+                    <li><strong>Git & GitHub</strong> – Version control and collaboration</li>
+                    <li><strong>GitHub Pages</strong> – Static documentation website</li>
                 </ul>
             </section>
 
@@ -89,18 +100,19 @@
                 </header>
 
                 <ul>
-                    <li>Browse media by category</li>
+                    <li>Browse media items by category</li>
                     <li>Search media using partial name matching</li>
                     <li>Borrow and return functionality</li>
                     <li>Borrower name and due date tracking</li>
                     <li>Automatic overdue detection</li>
-                    <li>Visual indicators for borrowed items</li>
+                    <li>Visual indicators for borrowed and overdue items</li>
                     <li>Media cover image support</li>
                     <li>Dark mode in the desktop application</li>
+                    <li>Client-side dark mode for the documentation website</li>
                 </ul>
             </section>
 
-            <!-- ARCHITECTURE -->
+            <!-- SYSTEM ARCHITECTURE -->
             <section>
                 <header class="major">
                     <h2>System Architecture</h2>
@@ -108,23 +120,24 @@
 
                 <p>
                     The system follows a three-layer architecture to ensure
-                    maintainability and separation of concerns:
+                    maintainability, clarity, and separation of concerns:
                 </p>
 
                 <ul>
                     <li>
                         <strong>Frontend (PyQt5):</strong>
-                        Handles user interaction and presentation logic.
+                        Handles user interaction and presentation logic in a desktop
+                        environment.
                     </li>
                     <li>
-                        <strong>Backend (Flask):</strong>
-                        Provides a RESTful API responsible for business logic,
-                        validation, and data processing.
+                        <strong>Backend (Flask REST API):</strong>
+                        Manages business logic, validation, and communication with
+                        the data layer.
                     </li>
                     <li>
                         <strong>Data Layer (JSON):</strong>
-                        Stores media information persistently in a lightweight,
-                        human-readable format.
+                        Stores media and borrowing information in a human-readable
+                        and lightweight format.
                     </li>
                 </ul>
             </section>
@@ -139,19 +152,28 @@
                     <article>
                         <img src="images/screenshot1.png" alt="Main application interface" />
                         <h3>Main Interface</h3>
-                        <p>Overview of the desktop application showing available media items.</p>
+                        <p>
+                            Overview of the desktop application displaying available
+                            media items and their current status.
+                        </p>
                     </article>
 
                     <article>
                         <img src="images/screenshot2.png" alt="Borrowed items view" />
                         <h3>Borrowing System</h3>
-                        <p>Borrowed items are clearly marked with due dates and status indicators.</p>
+                        <p>
+                            Borrowed items are clearly marked with borrower details,
+                            due dates, and visual indicators.
+                        </p>
                     </article>
 
                     <article>
                         <img src="images/screenshot3.png" alt="Dark mode interface" />
                         <h3>Dark Mode</h3>
-                        <p>Dark mode improves usability and visual comfort during extended use.</p>
+                        <p>
+                            Dark mode enhances usability and visual comfort during
+                            extended usage sessions.
+                        </p>
                     </article>
                 </div>
             </section>
@@ -186,14 +208,14 @@
 
 </div>
 
-<!-- Scripts -->
+<!-- Scripts (HTML5 UP) -->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/browser.min.js"></script>
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 
-<!-- Dark Mode Toggle -->
+<!-- Dark Mode Toggle Script -->
 <script>
     const toggleBtn = document.getElementById("themeToggle");
 

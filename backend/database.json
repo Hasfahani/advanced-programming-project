@@ -15,11 +15,11 @@
         "author": "Robert Greene",
         "publication_date": "2001",
         "category": "Book",
-        "status": "available",
+        "status": "borrowed",
         "image": "art of seduction.jpg",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
+        "borrowed_by": "Vanessa",
+        "borrow_date": "2025-12-12",
+        "due_date": "2025-12-13"
     },
     "Atomic Habits": {
         "name": "Atomic Habits",
@@ -59,11 +59,11 @@
         "author": "J.K. Rowling",
         "publication_date": "1997",
         "category": "Book",
-        "status": "available",
+        "status": "borrowed",
         "image": "Harry potter.jpg",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
+        "borrowed_by": "Yara",
+        "borrow_date": "2025-12-12",
+        "due_date": "2025-12-15"
     },
     "Sherlock Holmes": {
         "name": "Sherlock Holmes",
@@ -103,11 +103,11 @@
         "author": "Alan A. A. Donovan, Brian Kernighan",
         "publication_date": "2015",
         "category": "Book",
-        "status": "available",
+        "status": "borrowed",
         "image": "the go programming language.jpg",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
+        "borrowed_by": "Habib ",
+        "borrow_date": "2025-12-12",
+        "due_date": "2025-12-13"
     },
     "The Intelligent Investor": {
         "name": "The Intelligent Investor",
