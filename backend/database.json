@@ -92,11 +92,11 @@
         "author": "Stuart Warner & Si Husson",
         "publication_date": "2017",
         "category": "Book",
-        "status": "available",
+        "status": "borrowed",
         "image": "the finance book.jpg",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
+        "borrowed_by": "Gordon",
+        "borrow_date": "2025-12-12",
+        "due_date": "2025-12-17"
     },
     "The Go Programming Language": {
         "name": "The Go Programming Language",
@@ -114,11 +114,11 @@
         "author": "Benjamin Graham",
         "publication_date": "1949",
         "category": "Book",
-        "status": "available",
+        "status": "borrowed",
         "image": "the intelligent investor.jpg",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
+        "borrowed_by": "Craig",
+        "borrow_date": "2025-12-12",
+        "due_date": "2025-12-20"
     },
     "The Maths Book": {
         "name": "The Maths Book",
