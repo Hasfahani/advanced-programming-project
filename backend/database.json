@@ -60,10 +60,10 @@
         "publication_date": "2018",
         "category": "Book",
         "image": "picss/cant hurt me.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
+        "status": "borrowed",
+        "borrowed_by": "Melwin",
+        "borrow_date": "2025-12-12",
+        "due_date": "2025-12-14"
     },
     "English ist Einfach Easy": {
         "name": "English ist Einfach Easy",
@@ -104,10 +104,10 @@
         "publication_date": "2014",
         "category": "Film",
         "image": "picss/interstellar.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
+        "status": "borrowed",
+        "borrowed_by": "melwin",
+        "borrow_date": "2025-12-12",
+        "due_date": "2025-12-13"
     },
     "Mastery": {
         "name": "Mastery",
@@ -214,10 +214,10 @@
         "publication_date": "2015",
         "category": "Book",
         "image": "picss/the go programming language.jpg",
-        "status": "available",
-        "borrowed_by": null,
-        "borrow_date": null,
-        "due_date": null
+        "status": "borrowed",
+        "borrowed_by": "maria ",
+        "borrow_date": "2025-12-12",
+        "due_date": "2025-12-19"
     },
     "The Intelligent Investor": {
         "name": "The Intelligent Investor",
