@@ -20,10 +20,11 @@
         <div class="inner">
 
             <!-- HEADER -->
-            <header id="header">
+            <header id="header" style="display:flex; align-items:center; justify-content:space-between;">
                 <a href="index.html" class="logo">
                     <strong>Advanced Programming</strong> Project
                 </a>
+                <button id="themeToggle">Dark Mode</button>
             </header>
 
             <!-- HERO / BANNER -->
@@ -37,9 +38,9 @@
                     <p>
                         This website documents the design and implementation of an
                         Online Library Management System developed as part of the
-                        Advanced Programming course. The project demonstrates the
-                        application of software engineering principles, backend
-                        development, and graphical user interface design.
+                        Advanced Programming course. The project demonstrates
+                        backend development, desktop GUI design, and clean software
+                        architecture using Python.
                     </p>
 
                     <ul>
@@ -61,8 +62,7 @@
                     The Online Library Management System is a desktop-based application
                     that allows users to browse, search, borrow, and return media items
                     such as books and films. The system tracks availability, borrower
-                    information, and due dates, providing clear visual feedback to the
-                    user.
+                    information, and due dates while providing clear visual feedback.
                 </p>
             </section>
 
@@ -76,7 +76,7 @@
                     <li><strong>Python</strong> – Core programming language</li>
                     <li><strong>Flask</strong> – RESTful backend API</li>
                     <li><strong>PyQt5</strong> – Desktop graphical user interface</li>
-                    <li><strong>JSON</strong> – Lightweight persistent data storage</li>
+                    <li><strong>JSON</strong> – Persistent data storage</li>
                     <li><strong>Git & GitHub</strong> – Version control</li>
                     <li><strong>GitHub Pages</strong> – Project documentation website</li>
                 </ul>
@@ -90,8 +90,8 @@
 
                 <ul>
                     <li>Browse media by category</li>
-                    <li>Search using partial name matching</li>
-                    <li>Borrow and return media items</li>
+                    <li>Search media using partial name matching</li>
+                    <li>Borrow and return functionality</li>
                     <li>Borrower name and due date tracking</li>
                     <li>Automatic overdue detection</li>
                     <li>Visual indicators for borrowed items</li>
@@ -107,7 +107,7 @@
                 </header>
 
                 <p>
-                    The system follows a clear three-layer architecture to ensure
+                    The system follows a three-layer architecture to ensure
                     maintainability and separation of concerns:
                 </p>
 
@@ -118,11 +118,13 @@
                     </li>
                     <li>
                         <strong>Backend (Flask):</strong>
-                        Provides a REST API responsible for business logic and validation.
+                        Provides a RESTful API responsible for business logic,
+                        validation, and data processing.
                     </li>
                     <li>
                         <strong>Data Layer (JSON):</strong>
-                        Stores media records persistently in a human-readable format.
+                        Stores media information persistently in a lightweight,
+                        human-readable format.
                     </li>
                 </ul>
             </section>
@@ -137,25 +139,19 @@
                     <article>
                         <img src="images/screenshot1.png" alt="Main application interface" />
                         <h3>Main Interface</h3>
-                        <p>
-                            Overview of the desktop application showing available media items.
-                        </p>
+                        <p>Overview of the desktop application showing available media items.</p>
                     </article>
 
                     <article>
                         <img src="images/screenshot2.png" alt="Borrowed items view" />
                         <h3>Borrowing System</h3>
-                        <p>
-                            Borrowed items are clearly marked with due dates and status indicators.
-                        </p>
+                        <p>Borrowed items are clearly marked with due dates and status indicators.</p>
                     </article>
 
                     <article>
                         <img src="images/screenshot3.png" alt="Dark mode interface" />
                         <h3>Dark Mode</h3>
-                        <p>
-                            Dark mode improves usability and visual comfort during extended use.
-                        </p>
+                        <p>Dark mode improves usability and visual comfort during extended use.</p>
                     </article>
                 </div>
             </section>
@@ -196,6 +192,21 @@
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
+
+<!-- Dark Mode Toggle -->
+<script>
+    const toggleBtn = document.getElementById("themeToggle");
+
+    toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+            toggleBtn.textContent = "Light Mode";
+        } else {
+            toggleBtn.textContent = "Dark Mode";
+        }
+    });
+</script>
 
 </body>
 </html>
