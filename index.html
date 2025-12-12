@@ -9,6 +9,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- Screenshot sizing (safe override) -->
+    <style>
+        .posts article img {
+            width: 100%;
+            max-height: 280px;
+            object-fit: contain;
+            background-color: #f4f4f4;
+            padding: 0.5em;
+        }
+
+        body.dark-mode .posts article img {
+            background-color: #1e1e1e;
+        }
+    </style>
 </head>
 
 <body class="is-preload">
@@ -40,10 +55,10 @@
 
                     <p>
                         This website documents the design and implementation of an
-                        <strong>Online Library Management System</strong> developed as part of the
-                        Advanced Programming course. The project focuses on clean
-                        software architecture, RESTful backend design, and desktop
-                        graphical user interfaces using Python.
+                        <strong>Online Library Management System</strong> developed as part of
+                        the Advanced Programming course. The project demonstrates clean
+                        software architecture, RESTful backend design, and desktop GUI
+                        development using Python.
                     </p>
 
                     <ul>
@@ -63,17 +78,17 @@
                 </header>
 
                 <p>
-                    The Online Library Management System is a desktop-based software
-                    application that allows users to browse, search, borrow, and return
-                    various media items such as books, films, and magazines. The system
-                    tracks availability, borrower information, and due dates while
-                    providing clear visual feedback through the user interface.
+                    The Online Library Management System is a desktop-based application
+                    that allows users to browse, search, borrow, and return media items
+                    such as books, films, and magazines. The system tracks availability,
+                    borrower information, and due dates while providing clear visual
+                    feedback through the user interface.
                 </p>
 
                 <p>
-                    The primary goal of the project is to demonstrate the application
-                    of advanced programming concepts, including modular design,
-                    client–server communication, and separation of concerns.
+                    The project focuses on applying advanced programming concepts such
+                    as modular design, client–server architecture, and separation of
+                    concerns.
                 </p>
             </section>
 
@@ -88,7 +103,7 @@
                     <li><strong>Flask</strong> – RESTful backend API</li>
                     <li><strong>PyQt5</strong> – Desktop graphical user interface</li>
                     <li><strong>JSON</strong> – Lightweight persistent data storage</li>
-                    <li><strong>Git & GitHub</strong> – Version control and collaboration</li>
+                    <li><strong>Git & GitHub</strong> – Version control</li>
                     <li><strong>GitHub Pages</strong> – Static documentation website</li>
                 </ul>
             </section>
@@ -120,24 +135,21 @@
 
                 <p>
                     The system follows a three-layer architecture to ensure
-                    maintainability, clarity, and separation of concerns:
+                    maintainability and separation of concerns:
                 </p>
 
                 <ul>
                     <li>
                         <strong>Frontend (PyQt5):</strong>
-                        Handles user interaction and presentation logic in a desktop
-                        environment.
+                        Handles user interaction and presentation logic.
                     </li>
                     <li>
                         <strong>Backend (Flask REST API):</strong>
-                        Manages business logic, validation, and communication with
-                        the data layer.
+                        Implements business logic and exposes RESTful endpoints.
                     </li>
                     <li>
                         <strong>Data Layer (JSON):</strong>
-                        Stores media and borrowing information in a human-readable
-                        and lightweight format.
+                        Stores media and borrowing data in a lightweight format.
                     </li>
                 </ul>
             </section>
@@ -149,32 +161,35 @@
                 </header>
 
                 <div class="posts">
+
                     <article>
-                        <img src="images/screenshot1.png" alt="Main application interface" />
+                        <img src="images/pic1.jpg" alt="Main application interface" />
                         <h3>Main Interface</h3>
                         <p>
-                            Overview of the desktop application displaying available
-                            media items and their current status.
+                            Main interface of the desktop application displaying
+                            available and borrowed media items retrieved from the
+                            backend API.
                         </p>
                     </article>
 
                     <article>
-                        <img src="images/screenshot2.png" alt="Borrowed items view" />
-                        <h3>Borrowing System</h3>
+                        <img src="images/pic2.jpg" alt="Borrowed item details" />
+                        <h3>Borrowed Media Details</h3>
                         <p>
-                            Borrowed items are clearly marked with borrower details,
-                            due dates, and visual indicators.
+                            Detailed view of a borrowed media item showing borrower
+                            information, due date, and current status.
                         </p>
                     </article>
 
                     <article>
-                        <img src="images/screenshot3.png" alt="Dark mode interface" />
+                        <img src="images/pic3.jpg" alt="Dark mode interface" />
                         <h3>Dark Mode</h3>
                         <p>
-                            Dark mode enhances usability and visual comfort during
-                            extended usage sessions.
+                            Dark mode interface demonstrating optional UI theming
+                            for improved visual comfort.
                         </p>
                     </article>
+
                 </div>
             </section>
 
@@ -208,27 +223,26 @@
 
 </div>
 
-<!-- Scripts (HTML5 UP) -->
+<!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/browser.min.js"></script>
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 
-<!-- Dark Mode Toggle Script -->
+<!-- Dark Mode Toggle -->
 <script>
     const toggleBtn = document.getElementById("themeToggle");
 
     toggleBtn.addEventListener("click", () => {
         document.body.classList.toggle("dark-mode");
 
-        if (document.body.classList.contains("dark-mode")) {
-            toggleBtn.textContent = "Light Mode";
-        } else {
-            toggleBtn.textContent = "Dark Mode";
-        }
+        toggleBtn.textContent = document.body.classList.contains("dark-mode")
+            ? "Light Mode"
+            : "Dark Mode";
     });
 </script>
 
 </body>
 </html>
+
