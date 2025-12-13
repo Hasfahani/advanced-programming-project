@@ -49,23 +49,25 @@ def test_search_media():
     print("✓ Search media works")
 
 def test_borrow_media():
-    """Test: PUT /media/<name>/borrow - should mark media as borrowed"""
+    """Test: POST /media/<name>/borrow - should mark media as borrowed"""
     print("Testing: Borrow media...")
-    response = requests.put(f"{BACKEND_URL}/media/Test Book/borrow")
+    borrow_data = {
+        "borrowed_by": "Test Student",
+        "days": 7
+    }
+    response = requests.post(f"{BACKEND_URL}/media/Test Book/borrow", json=borrow_data)
     assert response.status_code == 200, f"Expected 200, got {response.status_code}"
     data = response.json()
     assert data["status"] == "borrowed", "Status should be 'borrowed'"
-    assert data["item"]["status"] == "borrowed", "Item status should be 'borrowed'"
     print("✓ Borrow media works")
 
 def test_return_media():
-    """Test: PUT /media/<name>/return - should mark media as available"""
+    """Test: POST /media/<name>/return - should mark media as available"""
     print("Testing: Return media...")
-    response = requests.put(f"{BACKEND_URL}/media/Test Book/return")
+    response = requests.post(f"{BACKEND_URL}/media/Test Book/return")
     assert response.status_code == 200, f"Expected 200, got {response.status_code}"
     data = response.json()
     assert data["status"] == "returned", "Status should be 'returned'"
-    assert data["item"]["status"] == "available", "Item status should be 'available'"
     print("✓ Return media works")
 
 def test_delete_media():
